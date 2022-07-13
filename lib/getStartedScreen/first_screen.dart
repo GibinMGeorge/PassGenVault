@@ -53,21 +53,13 @@ class _FirstScreenState extends State<FirstScreen> {
             Text(
               'A Complete Solution for securely Managing Your Passwords',
               style: TextStyle(
-                  color: Colors.white,fontFamily: 'Ubuntu',
+                  color: Colors.grey,fontFamily: 'Ubuntu',
                   fontSize:
                   MediaQuery.of(context).size.width < 800 ? 24.0 : 30.0),
               textAlign: TextAlign.center,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(
-                '',
-                style: TextStyle(
-                    color: Colors.white70,
-                    fontSize:
-                        MediaQuery.of(context).size.width < 800 ? 14.0 : 20.0),
-                textAlign: TextAlign.center,
-              ),
             ),
             SizedBox(
               height: 20.0,

@@ -77,7 +77,7 @@ class _PasswordReportScreenState extends State<PasswordReportScreen> {
               '${averagePasswordLength().toString()}',
               style: TextStyle(
                   color: Colors.red,
-                  fontSize: 45.0,
+                  fontSize: 45.0,fontFamily: 'Ubuntu',
                   fontWeight: FontWeight.bold),
             );
     } else {
@@ -85,7 +85,7 @@ class _PasswordReportScreenState extends State<PasswordReportScreen> {
               '0',
               style: TextStyle(
                   color: Colors.red,
-                  fontSize: 45.0,
+                  fontSize: 45.0,fontFamily: 'Ubuntu',
                   fontWeight: FontWeight.bold),
             );
     }
@@ -120,14 +120,7 @@ class _PasswordReportScreenState extends State<PasswordReportScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 5.0,
-                ),
-                Divider(
-                  height: 10.0,
-                  color: Colors.black,
-                ),
-                SizedBox(
-                  height: 5.0,
+                  height: 15.0,
                 ),
                 Text(
                   weakPasswords(),
@@ -152,7 +145,7 @@ class _PasswordReportScreenState extends State<PasswordReportScreen> {
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 40.0,
+              height: 60.0,
               child: ListView.builder(
                 itemCount: weakPassword.length == 0 ? 1 : weakPassword.length,
                 scrollDirection: Axis.horizontal,
@@ -187,7 +180,7 @@ class _PasswordReportScreenState extends State<PasswordReportScreen> {
                                   weakPassword[index].title,
                                   style: TextStyle(
                                       fontSize: 24.0,
-                                      fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.bold,fontFamily: 'Ubuntu',
                                       color: Colors.white),
                                 ),
                               ),
@@ -231,7 +224,7 @@ class _PasswordReportScreenState extends State<PasswordReportScreen> {
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 40.0,
+              height: 60.0,
               child: ListView.builder(
                 itemCount:
                     strongPassword.length == 0 ? 1 : strongPassword.length,
@@ -267,7 +260,7 @@ class _PasswordReportScreenState extends State<PasswordReportScreen> {
                                   strongPassword[index].title,
                                   style: TextStyle(
                                       fontSize: 24.0,
-                                      fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.bold,fontFamily: 'Ubuntu',
                                       color: Colors.white),
                                 ),
                               ),

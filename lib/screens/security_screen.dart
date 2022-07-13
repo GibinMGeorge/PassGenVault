@@ -70,7 +70,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
       ),
       body:
       SingleChildScrollView(
-    child:Padding(
+      child:Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
