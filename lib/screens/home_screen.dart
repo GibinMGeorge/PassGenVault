@@ -126,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
             title: Text("Save & Manage Passwords",
 
                 style: TextStyle(color: Colors.white,fontFamily: 'Ubuntu',fontWeight: FontWeight.bold),),
-            backgroundColor: Color(0xff050000),
+            backgroundColor: Color(0xff242a33),
             actions: [
               IconButton(
                   onPressed: () => Navigator.push(context,
@@ -144,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Center(
                     child:Text('Your Passwords (${passwords.length})',
                         style: TextStyle(
-                          color: Colors.red,
+                          color: Color(0xff2aa7f3),
                           fontSize: 18.0,
                           fontWeight: FontWeight.w500,
                             fontFamily: 'Ubuntu'

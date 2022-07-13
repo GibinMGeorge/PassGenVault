@@ -58,7 +58,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
         centerTitle: true,
         title: Text(
           'Security',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white,fontFamily: 'Ubuntu',),
         ),
         leading: IconButton(
           icon: Icon(
@@ -68,7 +68,9 @@ class _SecurityScreenState extends State<SecurityScreen> {
           onPressed: () => Navigator.pop(context),
         ),
       ),
-      body: Padding(
+      body:
+      SingleChildScrollView(
+    child:Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
@@ -87,7 +89,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                       'Require Login At Startup',
                       style: TextStyle(
                           color: Colors.white,
-                          fontWeight: FontWeight.w500,
+                          fontWeight: FontWeight.w500,fontFamily: 'Ubuntu',
                           fontSize: 18.0),
                     ),
                     Switch(
@@ -149,7 +151,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                     textAlign: TextAlign.start,
                     style: TextStyle(
                         color: Colors.white,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w500,fontFamily: 'Ubuntu',
                         fontSize: 20.0),
                   ),
                 ),
@@ -158,6 +160,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
           ],
         ),
       ),
+      )
     );
   }
 }
