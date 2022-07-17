@@ -81,7 +81,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                   color: Color(0xff2E3647),
                   borderRadius: BorderRadius.circular(8.0)),
               child: Padding(
-                padding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                padding: EdgeInsets.fromLTRB(15.0, 10.0, 10.0, 10.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -93,7 +93,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                           fontSize: 18.0),
                     ),
                     Switch(
-                      value: users[1].loginRequired,
+                      value: users[0].loginRequired,
                       onChanged: (value) {
                         setState(() {
                           UserDatabase.instance.update(User(
@@ -141,11 +141,11 @@ class _SecurityScreenState extends State<SecurityScreen> {
                 height: 60.0,
                 width: MediaQuery.of(context).size.width - 10.0,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(7.0),
+                  borderRadius: BorderRadius.circular(8.0),
                   color: Color(0xff2E3647),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(10.0, 18.0, 10.0, 10.0),
+                  padding: EdgeInsets.fromLTRB(15.0, 18.0, 10.0, 10.0),
                   child: Text(
                     'Master Password',
                     textAlign: TextAlign.start,

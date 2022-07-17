@@ -43,11 +43,11 @@ class _MasterPasswordScreenState extends State<MasterPasswordScreen> {
                 height: 60.0,
                 width: MediaQuery.of(context).size.width - 10.0,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(7.0),
+                  borderRadius: BorderRadius.circular(8.0),
                   color: Color(0xff2E3647),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(10.0, 18.0, 10.0, 10.0),
+                  padding: EdgeInsets.fromLTRB(15.0, 18.0, 10.0, 10.0),
                   child: Text(
                     'Edit Master Password',
                     textAlign: TextAlign.start,

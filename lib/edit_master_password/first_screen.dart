@@ -37,7 +37,7 @@ class _FirstEditScreenState extends State<FirstEditScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff2E3647),
+      backgroundColor: Color(0xff151922),
       appBar: AppBar(
         brightness: Brightness.dark,
         elevation: 0.0,
@@ -49,27 +49,27 @@ class _FirstEditScreenState extends State<FirstEditScreen> {
             color: Colors.white,
           ),
         ),
+        title:Text(
+          'Change Password',
+          style: TextStyle(
+              color: Colors.white,
+              fontSize: 22.0,fontFamily: 'Ubuntu',
+              fontWeight: FontWeight.bold),
+        ),
       ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(20.0, 0.0, 10.0, 0.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Change Password',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 25.0,
-                  fontWeight: FontWeight.bold),
-            ),
             SizedBox(
-              height: 10.0,
+              height: 20.0,
             ),
             Text(
                 'Enter your current master password to change your master password.',
                 style: TextStyle(
                     color: Colors.white70,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w500,fontFamily: 'Ubuntu',
                     fontSize: 14.0)),
             SizedBox(
               height: 20.0,
@@ -78,11 +78,11 @@ class _FirstEditScreenState extends State<FirstEditScreen> {
               'Enter Master Password',
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 15.0,
+                  fontSize: 15.0,fontFamily: 'Ubuntu',
                   fontWeight: FontWeight.w500),
             ),
             SizedBox(
-              height: 5.0,
+              height: 15.0,
             ),
             Container(
               height: 80.0,
@@ -137,14 +137,14 @@ class _FirstEditScreenState extends State<FirstEditScreen> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [Color(0xffD80320), Color(0xffFF0022)]),
-                    borderRadius: BorderRadius.circular(8.0)),
+                    borderRadius: BorderRadius.circular(35.0)),
                 child: Center(
                     child: Text(
                   'Done',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 24.0,
+                      fontSize: 24.0,fontFamily: 'Ubuntu',
                       fontWeight: FontWeight.bold),
                 )),
               ),

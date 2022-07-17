@@ -35,7 +35,7 @@ class _SecondEditScreenState extends State<SecondEditScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff2E3647),
+      backgroundColor: Color(0xff151922),
       appBar: AppBar(
         brightness: Brightness.dark,
         elevation: 0.0,
@@ -46,26 +46,26 @@ class _SecondEditScreenState extends State<SecondEditScreen> {
               Icons.arrow_back_ios_new_rounded,
               color: Colors.white,
             )),
+        title: Text(
+          'Create New Password',
+          style: TextStyle(
+              color: Colors.white,
+              fontSize: 22.0,fontFamily: 'Ubuntu',
+              fontWeight: FontWeight.bold),
+        ),
       ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(20.0, 0.0, 10.0, 0.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Create New Password',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 25.0,
-                  fontWeight: FontWeight.bold),
-            ),
             SizedBox(
-              height: 10.0,
+              height: 20.0,
             ),
             Text(
                 'Your new password must be different from previous used passwords.',
                 style: TextStyle(
-                    color: Colors.white70,
+                    color: Colors.white70,fontFamily: 'Ubuntu',
                     fontWeight: FontWeight.w500,
                     fontSize: 14.0)),
             SizedBox(
@@ -75,11 +75,11 @@ class _SecondEditScreenState extends State<SecondEditScreen> {
               'Enter New Password',
               style: TextStyle(
                   color: Colors.white70,
-                  fontSize: 15.0,
+                  fontSize: 15.0,fontFamily: 'Ubuntu',
                   fontWeight: FontWeight.w500),
             ),
             SizedBox(
-              height: 5.0,
+              height: 15.0,
             ),
             Container(
               height: 80.0,
@@ -140,14 +140,14 @@ class _SecondEditScreenState extends State<SecondEditScreen> {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [Color(0xffD80320), Color(0xffFF0022)]),
-                    borderRadius: BorderRadius.circular(8.0)),
+                    borderRadius: BorderRadius.circular(35.0)),
                 child: Center(
                     child: Text(
                   'Reset Password',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 22.0,
+                      fontSize: 22.0,fontFamily: 'Ubuntu',
                       fontWeight: FontWeight.bold),
                 )),
               ),
